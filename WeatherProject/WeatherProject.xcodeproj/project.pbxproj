@@ -14,6 +14,8 @@
 		550BFCC12358F53600845131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550BFCC02358F53600845131 /* Assets.xcassets */; };
 		550BFCC42358F53600845131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550BFCC22358F53600845131 /* LaunchScreen.storyboard */; };
 		550BFCCF2358F53700845131 /* WeatherProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550BFCCE2358F53700845131 /* WeatherProjectTests.swift */; };
+		550BFCDC2359184600845131 /* PersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550BFCDB2359184600845131 /* PersistenceHelper.swift */; };
+		550BFCE023591A9C00845131 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550BFCDF23591A9C00845131 /* WeatherCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		550BFCCA2358F53700845131 /* WeatherProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		550BFCCE2358F53700845131 /* WeatherProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherProjectTests.swift; sourceTree = "<group>"; };
 		550BFCD02358F53700845131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		550BFCDB2359184600845131 /* PersistenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceHelper.swift; sourceTree = "<group>"; };
+		550BFCDF23591A9C00845131 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,9 @@
 		550BFCB62358F53200845131 /* WeatherProject */ = {
 			isa = PBXGroup;
 			children = (
+				550BFCDB2359184600845131 /* PersistenceHelper.swift */,
 				550BFCB72358F53200845131 /* AppDelegate.swift */,
+				550BFCDF23591A9C00845131 /* WeatherCell.swift */,
 				550BFCB92358F53200845131 /* SceneDelegate.swift */,
 				550BFCBB2358F53200845131 /* ViewController.swift */,
 				550BFCBD2358F53200845131 /* Main.storyboard */,
@@ -202,7 +208,9 @@
 			files = (
 				550BFCBC2358F53200845131 /* ViewController.swift in Sources */,
 				550BFCB82358F53200845131 /* AppDelegate.swift in Sources */,
+				550BFCE023591A9C00845131 /* WeatherCell.swift in Sources */,
 				550BFCBA2358F53200845131 /* SceneDelegate.swift in Sources */,
+				550BFCDC2359184600845131 /* PersistenceHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
