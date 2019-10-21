@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Search-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="K0V-zs-Coa"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="K0V-zs-Coa"/>
                     <navigationItem key="navigationItem" id="s6P-vD-kjZ"/>
                     <connections>
                         <outlet property="locationLabel" destination="fSj-Ic-iPy" id="4hc-bL-RKv"/>
@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="117.85714285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorites-->
         <scene sceneID="i38-xs-Uar">
             <objects>
-                <viewController id="Amj-0Y-RH7" sceneMemberID="viewController">
+                <viewController id="Amj-0Y-RH7" customClass="FavoritesVC" customModule="WeatherProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ldR-uR-UFT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,10 +99,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="nzc-Qs-fCY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart.fill" catalog="system" id="vRQ-ne-LHc"/>
+                    <navigationItem key="navigationItem" id="2IP-pk-HdR"/>
+                    <connections>
+                        <outlet property="favoritesView" destination="rYM-1a-JPe" id="wt3-CK-7Dq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVG-ZL-wmg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2636.231884057971" y="117.85714285714285"/>
+            <point key="canvasLocation" x="1958" y="847"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="uCz-EG-LkY">
@@ -115,6 +120,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ILd-jA-dOO"/>
+                        <segue destination="Amj-0Y-RH7" kind="relationship" relationship="viewControllers" id="7t0-i1-bg9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z49-Cv-8ff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -122,4 +128,8 @@
             <point key="canvasLocation" x="1047.8260869565217" y="117.85714285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="heart.fill" catalog="system" width="64" height="58"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="60"/>
+    </resources>
 </document>
