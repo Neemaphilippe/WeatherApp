@@ -10,6 +10,6 @@ import Foundation
 struct WeatherPersistenceManager {
 private init() {}
 static let manager = WeatherPersistenceManager()
-
  private let persistenceHelper = PersistenceHelper<Weather>(fileName: "weather.plist")
+    //save image
 }

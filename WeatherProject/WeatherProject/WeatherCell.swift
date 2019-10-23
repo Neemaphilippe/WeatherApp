@@ -12,5 +12,9 @@ class WeatherCell: UICollectionViewCell {
     
     @IBOutlet weak var forecastImage: UIImageView!
     
+    @IBOutlet weak var temperatureHighLabel: UILabel!
+    
+    
+    @IBOutlet weak var temperatureLowLabel: UILabel!
     
 }

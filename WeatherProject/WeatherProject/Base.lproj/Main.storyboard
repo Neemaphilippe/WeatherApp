@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="erQ-Wf-bH6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -17,38 +17,68 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0w0-Gf-a2Z">
-                                <rect key="frame" x="56" y="178" width="302" height="319"/>
+                                <rect key="frame" x="20" y="176" width="374" height="321"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8XK-P3-kd1">
-                                    <size key="itemSize" width="277" height="171"/>
+                                <color key="backgroundColor" red="0.80661861331824991" green="0.55065662150019201" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8XK-P3-kd1">
+                                    <size key="itemSize" width="281" height="313"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="x3a-NL-tyG" customClass="WeatherCell" customModule="WeatherProject" customModuleProvider="target">
-                                        <rect key="frame" x="12.5" y="0.0" width="277" height="171"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="weatherCell" id="x3a-NL-tyG" customClass="WeatherCell" customModule="WeatherProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="4" width="281" height="313"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4wL-ch-ki4">
-                                            <rect key="frame" x="0.0" y="0.0" width="277" height="171"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="281" height="313"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UTT-w2-UHb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="277" height="171"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UTT-w2-UHb">
+                                                    <rect key="frame" x="56" y="8" width="169" height="160"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="160" id="uVb-Nd-PZq"/>
+                                                    </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWO-ZB-c9g">
+                                                    <rect key="frame" x="8" y="207" width="254" height="47"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Quv-Fe-j1h">
+                                                    <rect key="frame" x="51" y="262" width="169" height="26"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UTT-w2-UHb" firstAttribute="leading" secondItem="4wL-ch-ki4" secondAttribute="leading" constant="56" id="2KE-yU-JA0"/>
+                                                <constraint firstItem="Quv-Fe-j1h" firstAttribute="leading" secondItem="4wL-ch-ki4" secondAttribute="leading" constant="51" id="5oA-q6-N5v"/>
+                                                <constraint firstAttribute="trailing" secondItem="TWO-ZB-c9g" secondAttribute="trailing" constant="19" id="Ahh-LJ-48V"/>
+                                                <constraint firstItem="TWO-ZB-c9g" firstAttribute="top" secondItem="UTT-w2-UHb" secondAttribute="bottom" constant="55" id="JTS-Jd-1S9"/>
+                                                <constraint firstItem="Quv-Fe-j1h" firstAttribute="top" secondItem="TWO-ZB-c9g" secondAttribute="bottom" constant="8" id="aNs-OS-MsP"/>
+                                                <constraint firstAttribute="bottom" secondItem="TWO-ZB-c9g" secondAttribute="bottom" constant="43" id="dqh-Hb-IrF"/>
+                                                <constraint firstAttribute="trailing" secondItem="Quv-Fe-j1h" secondAttribute="trailing" constant="61" id="oCR-dt-aIu"/>
+                                                <constraint firstItem="TWO-ZB-c9g" firstAttribute="leading" secondItem="4wL-ch-ki4" secondAttribute="leadingMargin" id="oqV-d6-et9"/>
+                                                <constraint firstItem="UTT-w2-UHb" firstAttribute="centerX" secondItem="4wL-ch-ki4" secondAttribute="centerX" id="ou9-0c-M5Y"/>
+                                                <constraint firstItem="UTT-w2-UHb" firstAttribute="top" secondItem="4wL-ch-ki4" secondAttribute="topMargin" id="rAd-yn-CDt"/>
+                                                <constraint firstAttribute="bottom" secondItem="Quv-Fe-j1h" secondAttribute="bottom" constant="25" id="xxT-vo-SUT"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="277" height="171"/>
+                                        <color key="backgroundColor" red="0.35835717429577463" green="0.058827736616901313" blue="0.26632221332394357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="customSize" width="281" height="313"/>
                                         <connections>
                                             <outlet property="forecastImage" destination="UTT-w2-UHb" id="s7l-Da-1qu"/>
+                                            <outlet property="temperatureHighLabel" destination="TWO-ZB-c9g" id="3Ya-xA-dLo"/>
+                                            <outlet property="temperatureLowLabel" destination="Quv-Fe-j1h" id="syE-Fd-06T"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSj-Ic-iPy">
-                                <rect key="frame" x="96" y="109" width="223" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSj-Ic-iPy">
+                                <rect key="frame" x="20" y="109" width="374" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -75,6 +105,7 @@
                     <navigationItem key="navigationItem" id="s6P-vD-kjZ"/>
                     <connections>
                         <outlet property="locationLabel" destination="fSj-Ic-iPy" id="4hc-bL-RKv"/>
+                        <outlet property="weatherCollectionView" destination="0w0-Gf-a2Z" id="Ddl-7q-YjL"/>
                         <outlet property="zipcodeInputText" destination="CmJ-vQ-kLu" id="CLd-2q-fLT"/>
                     </connections>
                 </viewController>
@@ -115,6 +146,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="erQ-Wf-bH6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ckg-XG-n6v">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
