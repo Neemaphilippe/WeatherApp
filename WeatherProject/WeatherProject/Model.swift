@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct WeatherModel: Codable {
-    let daily: Weather
+struct Weather: Codable {
+    let daily: WeatherDaily
 }
 
-struct Weather: Codable {
+struct WeatherDaily: Codable {
     let data: [WeatherForecast]
 }
 

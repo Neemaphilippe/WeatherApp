@@ -38,7 +38,7 @@ class DetailWeatherVC: UIViewController {
             return label
         }()
     
-    var weather: Weather!
+    var selectedForecast: WeatherForecast!
     
     override func viewDidLoad() {
         super.viewDidLoad()
