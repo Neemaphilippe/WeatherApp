@@ -14,7 +14,7 @@ class DetailWeatherVC: UIViewController {
            
           let imageview = UIImageView()
            imageview.contentMode = .scaleAspectFit
-           imageview.backgroundColor = .red
+           imageview.backgroundColor = .lightGray
            return imageview
            
        }()
@@ -67,15 +67,20 @@ private func constrainDetailImageView(){
     
 private func configureStackView(){
     let stackView = UIStackView(arrangedSubviews: [cityNameLabel,dateLabel, descriptionLabel])
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
-        stackView.spacing = 8
+        stackView.distribution = .fillEqually
+        stackView.alignment = .leading
+    
         view.addSubview(stackView)
-           
-           
-        stackView.topAnchor.constraint(equalTo: cityImageView.bottomAnchor, constant: 40).isActive = true
-        stackView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.8).isActive = true
-        stackView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
-        stackView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.15).isActive = true
+    
+    stackView.translatesAutoresizingMaskIntoConstraints = false
+    NSLayoutConstraint.activate([
+        stackView.topAnchor.constraint(equalToSystemSpacingBelow: cityImageView.bottomAnchor, multiplier: 10),
+        stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+        stackView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.8),
+        stackView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor)
+    
+    ])
+         
        }
 }
