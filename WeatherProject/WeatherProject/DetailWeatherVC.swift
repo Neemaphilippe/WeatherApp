@@ -19,24 +19,28 @@ class DetailWeatherVC: UIViewController {
            
        }()
        
-       lazy var cityNameLabel: UILabel = {
-           let label = UILabel()
-           label.textAlignment = .center
-           return label
-       }()
-       
-       
-       lazy var dateLabel: UILabel = {
-           let label = UILabel()
-           label.textAlignment = .center
-           return label
-       }()
+    lazy var cityNameLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        label.text = "Weather for: \(name!)"
+        return label
+    }()
     
-        lazy var descriptionLabel: UILabel = {
-            let label = UILabel()
-            label.textAlignment = .center
-            return label
-        }()
+    
+    lazy var dateLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    lazy var descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        return label
+    }()
     
     var selectedForecast: WeatherForecast!
     var name: String!
