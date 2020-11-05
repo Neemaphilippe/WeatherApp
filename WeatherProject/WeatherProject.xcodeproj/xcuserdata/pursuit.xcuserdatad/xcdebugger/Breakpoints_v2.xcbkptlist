@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FB2919FD-DDFC-4512-AA6A-8F6B560653B2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BACB0308-A748-4AE4-A0D4-07CD5B99F48B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatherProject/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "BACB0308-A748-4AE4-A0D4-07CD5B99F48B - 4f0ee1e549eea23a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherProject.AppDelegate.__allocating_init() -&gt; WeatherProject.AppDelegate"
+                  moduleName = "WeatherProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pursuit/Desktop/EarlyPursuit/WeatherApp/WeatherProject/WeatherProject/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "BACB0308-A748-4AE4-A0D4-07CD5B99F48B - fde5b914abfdb282"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherProject.AppDelegate.init() -&gt; WeatherProject.AppDelegate"
+                  moduleName = "WeatherProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pursuit/Desktop/EarlyPursuit/WeatherApp/WeatherProject/WeatherProject/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  uuid = "BACB0308-A748-4AE4-A0D4-07CD5B99F48B - d2d17c77e0c55b4d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherProject.AppDelegate.__deallocating_deinit"
+                  moduleName = "WeatherProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pursuit/Desktop/EarlyPursuit/WeatherApp/WeatherProject/WeatherProject/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "BACB0308-A748-4AE4-A0D4-07CD5B99F48B - 250630969c2dc184"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "WeatherProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pursuit/Desktop/EarlyPursuit/WeatherApp/WeatherProject/WeatherProject/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

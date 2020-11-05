@@ -111,9 +111,9 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let detailVC = storyboard.instantiateViewController(identifier: "detailWeatherVC") as! DetailWeatherVC
-        
+        let detailVC = DetailWeatherVC()
+        detailVC.selectedForecast = weatherForecast[indexPath.row]
+        detailVC.name = name
         self.navigationController?.pushViewController(detailVC, animated: true)
         
     }

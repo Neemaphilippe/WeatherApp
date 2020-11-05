@@ -39,12 +39,14 @@ class DetailWeatherVC: UIViewController {
         }()
     
     var selectedForecast: WeatherForecast!
+    var name: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         constrainDetailImageView()
         configureStackView()
+        
 
         
     }

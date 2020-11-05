@@ -25,7 +25,7 @@ struct WeatherAPIClient {
                 completionHandler(.failure(.other(rawError: error)))
             case .success(let data):
                 do {
-                    let weatherArr = try JSONDecoder().decode(WeatherModel.self, from: data)
+                    let weatherArr = try JSONDecoder().decode(Weather.self, from: data)
                     completionHandler(.success(weatherArr.daily.data))
                 }
                 catch {
